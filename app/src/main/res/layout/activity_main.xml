@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marginTopHeader"
+            android:fontFamily="monospace"
+            android:text="ORDER A COFFEE!"
+            android:textSize="@dimen/margin_font_size_header"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:text="ENTERT YOUR NAME"
+            android:textSize="@dimen/font_size"
+            android:layout_marginTop="@dimen/margin_top_normal"
+            android:layout_marginLeft="@dimen/margin_left_normal"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxCream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:text="CREAM"
+            android:layout_marginLeft="@dimen/margin_left_normal"
+            android:layout_marginTop="@dimen/margin_top_normal"
+            />
+        <CheckBox
+            android:id="@+id/checkBoxMilk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBoxCream"
+            android:text="MILK"
+            android:layout_marginLeft="@dimen/margin_left_normal"
+            android:layout_marginTop="@dimen/margin_top_normal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantityTextView"
+            android:text="QUANTITY:"
+            android:layout_below="@id/checkBoxMilk"
+            android:layout_marginTop="@dimen/margin_top_normal"
+            android:layout_marginLeft="@dimen/margin_left_normal"
+            android:textSize="@dimen/font_size"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantityTextView"
+            android:layout_marginLeft="@dimen/margin_left_normal"
+            android:layout_marginTop="@dimen/margin_top_normal">
+            <Button
+                android:id="@+id/buttonPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="@dimen/margin_left_normal"
+                android:id="@+id/quantity"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/buttonMinus"
+                android:layout_marginLeft="@dimen/margin_left_normal"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/priceTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout"
+            android:text="PRICE:"
+            android:layout_marginLeft="@dimen/margin_left_normal"
+            android:layout_marginTop="@dimen/margin_top_normal"
+            android:textSize="@dimen/font_size"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceDisplay"
+            android:text="0"
+            android:layout_marginLeft="@dimen/margin_left_normal"
+            android:layout_marginTop="@dimen/margin_top_normal"
+            android:layout_below="@id/priceTag"
+            android:textSize="@dimen/font_size"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitOrderButton"
+            android:layout_below="@id/priceDisplay"
+            android:layout_marginLeft="@dimen/margin_left_normal"
+            android:layout_marginTop="@dimen/margin_top_normal"
+            android:text="ORDER!"
+            android:layout_marginRight="@dimen/margin_right_normal"/>
+
+    </RelativeLayout>
+
+</ScrollView>

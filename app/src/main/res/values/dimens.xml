@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <dimen name="marginTopHeader">31dp</dimen>
+    <dimen name="marginLeftHeader">25dp</dimen>
+    <dimen name="font_size">15sp</dimen>
+    <dimen name="margin_top_normal">15dp</dimen>
+    <dimen name="margin_left_normal">10dp</dimen>
+    <dimen name="margin_font_size_header">31sp</dimen>
+    <dimen name="margin_right_normal">10dp</dimen>
+
+</resources>
